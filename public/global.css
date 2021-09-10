@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fadeIn {
+  position: relative;
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+}
+
+.fadeOut {
+  position: relative;
+  animation: fadeOut 0.5s linear;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  75% {
+    opacity: 0.5;
+    left: -60px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 30px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
